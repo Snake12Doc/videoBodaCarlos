@@ -1,0 +1,4 @@
+# El video se aloja en YouTube y no debe publicarse en GitHub.
+*.mp4
+
+.DS_Store

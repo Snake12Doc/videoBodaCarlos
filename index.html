@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Un recuerdo muy especial para celebrar la boda de Carlos." />
+    <meta name="theme-color" content="#f4efe7" />
+    <title>La boda de Carlos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="nav__mark" href="#inicio" aria-label="Volver al inicio">C</a>
+        <div class="nav__links">
+          <a href="#video">El video</a>
+          <a href="#recuerdos">Recuerdos</a>
+        </div>
+      </nav>
+
+      <div class="hero__content" id="inicio">
+        <p class="eyebrow">Un día para recordar</p>
+        <h1>La boda<br />de Carlos</h1>
+        <p class="hero__intro">Una pequeña mirada a todos los momentos que nos han traído hasta aquí.</p>
+        <a class="hero__link" href="#video">Ver el video <span aria-hidden="true">↓</span></a>
+      </div>
+
+      <figure class="hero__portrait">
+        <img src="carlos5.png" alt="Retrato de Carlos" />
+      </figure>
+      <p class="hero__year" aria-hidden="true">PARA<br />SIEMPRE</p>
+    </header>
+
+    <main>
+      <section class="film section" id="video">
+        <div class="section-heading">
+          <p class="eyebrow">La historia en imágenes</p>
+          <h2>Para ti, Carlos</h2>
+          <p>Con todo nuestro cariño, en uno de los días más felices de tu vida.</p>
+        </div>
+
+        <div class="video-shell" data-youtube-id="PON_AQUI_EL_ID">
+          <div class="video-placeholder">
+            <span class="play-icon" aria-hidden="true"></span>
+            <p>El video estará disponible muy pronto</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="memories section" id="recuerdos">
+        <div class="section-heading section-heading--left">
+          <p class="eyebrow">A través de los años</p>
+          <h2>Siempre tú</h2>
+          <p>Hay cosas que cambian. La sonrisa, por suerte, no es una de ellas.</p>
+        </div>
+
+        <div class="gallery">
+          <button class="photo photo--one" type="button" data-image="carlos1.png" data-alt="Carlos de joven">
+            <img src="carlos1.png" alt="Carlos de joven" loading="lazy" />
+          </button>
+          <button class="photo photo--two" type="button" data-image="carlos2.png" data-alt="Carlos al aire libre">
+            <img src="carlos2.png" alt="Carlos al aire libre" loading="lazy" />
+          </button>
+          <p class="gallery__note gallery__note--one">Cada etapa,<br /><em>un recuerdo</em></p>
+          <button class="photo photo--three" type="button" data-image="carlos3.png" data-alt="Retrato de Carlos">
+            <img src="carlos3.png" alt="Retrato de Carlos" loading="lazy" />
+          </button>
+          <p class="gallery__note gallery__note--two">Y lo mejor<br /><em>está por llegar</em></p>
+          <button class="photo photo--four" type="button" data-image="carlos4.png" data-alt="Carlos sonriendo">
+            <img src="carlos4.png" alt="Carlos sonriendo" loading="lazy" />
+          </button>
+        </div>
+      </section>
+
+      <section class="closing section">
+        <p class="closing__ornament" aria-hidden="true">C</p>
+        <p class="eyebrow">Hoy empieza una nueva historia</p>
+        <h2>Que seáis muy felices</h2>
+        <div class="closing__line" aria-hidden="true"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Hecho con cariño para la boda de Carlos</p>
+    </footer>
+
+    <dialog class="lightbox" aria-label="Foto ampliada">
+      <button class="lightbox__close" type="button" aria-label="Cerrar">×</button>
+      <img src="" alt="" />
+    </dialog>
+  </body>
+</html>
