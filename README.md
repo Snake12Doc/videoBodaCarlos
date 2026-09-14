@@ -3,6 +3,7 @@
 Web estática preparada para GitHub Pages.
 
 El archivo `qr-boda-carlos.png` contiene el código QR listo para imprimir y dirige a la web publicada.
+El archivo `qr-boda-carlos-a4.pdf` incluye 24 copias en una hoja A4 con guías de corte.
 
 ## Añadir el video
 
