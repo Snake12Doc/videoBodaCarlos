@@ -189,8 +189,14 @@ h2 {
 }
 
 .film {
+  padding-top: 32px;
   background: var(--ink);
   color: var(--paper);
+}
+
+.film .section-heading {
+  margin-top: 62px;
+  margin-bottom: 0;
 }
 
 .video-shell {
@@ -445,6 +451,14 @@ footer {
 
   .section {
     padding: 85px 6vw;
+  }
+
+  .film {
+    padding-top: 20px;
+  }
+
+  .film .section-heading {
+    margin-top: 42px;
   }
 
   .section-heading {

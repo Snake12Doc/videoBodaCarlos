@@ -2,6 +2,8 @@
 
 Web estática preparada para GitHub Pages.
 
+El archivo `qr-boda-carlos.png` contiene el código QR listo para imprimir y dirige a la web publicada.
+
 ## Añadir el video
 
 1. Entra en [YouTube Studio](https://studio.youtube.com/).
