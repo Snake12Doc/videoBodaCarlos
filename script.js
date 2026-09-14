@@ -13,12 +13,14 @@ if (youtubeId && youtubeId !== "PON_AQUI_EL_ID") {
 
 const lightbox = document.querySelector(".lightbox");
 const lightboxImage = lightbox.querySelector("img");
+const lightboxCaption = lightbox.querySelector(".lightbox__caption");
 const closeButton = lightbox.querySelector(".lightbox__close");
 
-document.querySelectorAll(".photo").forEach((photo) => {
+document.querySelectorAll(".evidence").forEach((photo) => {
   photo.addEventListener("click", () => {
     lightboxImage.src = photo.dataset.image;
     lightboxImage.alt = photo.dataset.alt;
+    lightboxCaption.textContent = photo.querySelector(".evidence__caption").textContent;
     lightbox.showModal();
   });
 });
