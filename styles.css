@@ -489,8 +489,9 @@ h2 {
 
 .closing {
   padding: 140px 5vw;
+  border-top: 10px solid var(--yellow);
   color: white;
-  background: var(--black);
+  background: linear-gradient(135deg, #3c062d 0%, var(--purple) 55%, #7b125d 100%);
   text-align: center;
 }
 
