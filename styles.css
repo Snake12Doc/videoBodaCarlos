@@ -1,9 +1,9 @@
 :root {
   --black: #151515;
   --paper: #f1eadb;
-  --red: #e64128;
-  --yellow: #f3cf3b;
-  --blue: #9bc8d3;
+  --red: #aa151b;
+  --yellow: #f1bf00;
+  --purple: #630a4a;
   --sans: "DM Sans", Arial, sans-serif;
   --display: "Oswald", Impact, sans-serif;
 }
@@ -135,10 +135,20 @@ a {
   min-height: 100svh;
   grid-template-columns: 0.95fr 1.05fr;
   overflow: hidden;
-  border-top: 12px solid var(--red);
   background:
     linear-gradient(90deg, transparent 49.8%, rgb(21 21 21 / 13%) 50%, transparent 50.2%),
     var(--paper);
+}
+
+.hero::after {
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  background: linear-gradient(to bottom, var(--red) 0 33.33%, var(--yellow) 33.33% 66.66%, var(--purple) 66.66%);
+  content: "";
 }
 
 .hero::before,
@@ -166,7 +176,7 @@ a {
 .nav__brand {
   padding: 7px 10px;
   color: white;
-  background: var(--black);
+  background: var(--purple);
   font-family: var(--display);
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -260,7 +270,7 @@ h2 {
   position: relative;
   height: 100%;
   margin: 0;
-  background: var(--blue);
+  background: var(--purple);
 }
 
 .hero__portrait img {
@@ -289,8 +299,8 @@ h2 {
   top: 20%;
   left: calc(50% - 105px);
   padding: 13px 18px;
-  border: 5px double var(--red);
-  color: var(--red);
+  border: 5px double var(--purple);
+  color: var(--purple);
   font-family: var(--display);
   font-size: 1.8rem;
   font-weight: 700;
@@ -319,7 +329,8 @@ h2 {
   overflow: hidden;
   padding: 11px;
   color: white;
-  background: var(--red);
+  border-top: 4px solid var(--yellow);
+  background: var(--purple);
   font-family: var(--display);
   font-size: 0.76rem;
   letter-spacing: 0.16em;
@@ -355,7 +366,7 @@ h2 {
 
 .dossier__heading > p:last-child {
   margin: 0;
-  border-left: 4px solid var(--red);
+  border-left: 4px solid var(--purple);
   padding-left: 18px;
   line-height: 1.6;
 }
@@ -454,7 +465,8 @@ h2 {
   margin: 0;
   padding: 38px;
   color: white;
-  background: var(--red);
+  border-top: 10px solid var(--yellow);
+  background: var(--purple);
   transform: rotate(-1deg);
 }
 
@@ -502,6 +514,7 @@ h2 {
 footer {
   padding: 22px;
   color: var(--black);
+  border-top: 8px solid var(--red);
   background: var(--yellow);
   font-family: var(--display);
   font-size: 0.68rem;
@@ -576,7 +589,10 @@ footer {
   .hero {
     min-height: auto;
     grid-template-columns: 1fr;
-    border-top-width: 8px;
+  }
+
+  .hero::after {
+    height: 8px;
   }
 
   .nav {
